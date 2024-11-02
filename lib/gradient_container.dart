@@ -11,13 +11,21 @@ class GradientContainer extends StatelessWidget {
         gradient: LinearGradient(
           colors: [
             Color.fromARGB(255, 255, 105, 180),
-            Color.fromARGB(255, 0, 191, 255),
+            Color.fromARGB(255, 0, 190, 255),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
       ),
-      child: const Center(child: StyledText()),
+      child: const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            StyledText(),
+            Text('hi'),
+          ],
+        ),
+      ),
     );
   }
 }
