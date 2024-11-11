@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:eureka/styled_text.dart';
 
 var startAlignment = Alignment.topLeft;
 var endAlignment = Alignment.bottomRight;
@@ -23,12 +22,13 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child: const Center(
+      child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            StyledText('Alcohol'),
-            Text('Dreams'),
+            Image.asset('assets/images/dice-2.png'),
+            // StyledText('Alcohol'),
+            // Text('Dreams'),
           ],
         ),
       ),
