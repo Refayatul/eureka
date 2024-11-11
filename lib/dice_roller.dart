@@ -18,7 +18,7 @@ class _DiceRollerState extends State<DiceRoller> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Image.asset(
-          'assets/images/dice-2.png',
+          activeDiceimage,
           width: 120,
         ),
         const SizedBox(),
@@ -26,7 +26,9 @@ class _DiceRollerState extends State<DiceRoller> {
         const SizedBox(),
         TextButton(
           onPressed: () {
-            activeDiceimage = 'assets/images/dice-3.png';
+            setState(() {
+              activeDiceimage = 'assets/images/dice-3.png';
+            });
           },
           style: TextButton.styleFrom(
             foregroundColor: Colors.white,
